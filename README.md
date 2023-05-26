@@ -23,7 +23,7 @@ We can see that for each missing song name, there is a corresponding URI. Hence 
 Genre has several unique values, hence we will have to look closely on methods to fill for it.
 
 <div style="display:flex;">
-  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/genreuniruqe.png" alt="images of missingsongs" width="500" height="300" />
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/genreuniruqe.png" alt="images of missingsongs" width="300" height="300" />
 </div>
 
 We will be seeing if there is any significant association between 'genre' and the numeric columns: null hypothesis that there is no association between two categorical variables. Using chi-test we see:
@@ -101,7 +101,7 @@ Here we can see that as instumentalness increases, speachiness drops alot, hence
 
 ### Filling Energy:
 
-[filling enerfgy img](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/fillingenergy.png)
+![filling enerfgy img](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/fillingenergy.png)
 
 ## DATA ENRICHING: ADDING ARTIST NAMES USING SPOTIFY API
 
