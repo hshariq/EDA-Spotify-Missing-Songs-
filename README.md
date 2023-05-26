@@ -100,11 +100,13 @@ Here we can see that as instumentalness increases, speachiness drops alot, hence
 ![filling img](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/fillspeach.png)
 
 ### Filling Energy:
+
 [filling enerfgy img](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/fillingenergy.png)
 
 ## DATA ENRICHING: ADDING ARTIST NAMES USING SPOTIFY API
+
 One of the steps of data wrangling is "Enhancement", that is adding data to ur dataset. So that is what we are doing here, we are adding the column "artist_name" by using the spotify api to get the name of songs artists, this will be using the song_name, to add artist name, it requires client id and secret which can not be shared.
 This is simply using the Spotify API to go and get the song name for the corresponding song_name, and filling it inthe artist_name column:
-enriching image
 
+![enriching image](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/getArtist.png)
 
