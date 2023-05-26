@@ -44,7 +44,7 @@ Tempo has no correlations we use anova to see if it has any relation with non nu
 Since our p values are greater than 0.05, our null hypothesis is true. We look at tempos distubtion and see if we can apply any other method on it:
 
 <div style="display:flex;">
-  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/coodefortempodist.png" alt="codetempo" width="400" height="300" />
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/coodefortempodist.png" alt="codetempo" width="600" height="300" />
   <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/tempodistrubition.png" alt="tempodist" width="400" height="300" />
 </div>
 
