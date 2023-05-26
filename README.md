@@ -15,7 +15,9 @@ An overview of our datas missing value:
 ### Filling for Song Names:
 We can see that for each missing song name, there is a corresponding URI. Hence we will be using the uri, to update missing songs, it requires client id and secret which can not be shared. This is simply using the Spotify API to go and get the song name for the corresponding URI, and filling it inthe song_name column.
 
-![image of missing songs](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/songNamefill.png)
+<div style="display:flex;">
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/songNamefill.png" alt="images of missingsongs" width="500" height="300" />
+</div>
 
 ### Filling for Genre:
 Genre has several unique values, hence we will have to look closely on methods to fill for it.
