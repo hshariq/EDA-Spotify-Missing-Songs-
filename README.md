@@ -6,12 +6,14 @@ Data Wrangling and EDA for Songs dataset of Spotify. The dataset included severa
 
 An overview of our datas missing value:
 
-images of missing
+![images of missing](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/missingmanomatrix.png)
+![sum](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/summissing.png)
+![pattern](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/dendogram.png)
 
 ### Filling for Song Names:
 We can see that for each missing song name, there is a corresponding URI. Hence we will be using the uri, to update missing songs, it requires client id and secret which can not be shared. This is simply using the Spotify API to go and get the song name for the corresponding URI, and filling it inthe song_name column.
 
-image of missing songs
+![image of missing songs](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/songNamefill.png)
 
 ### Filling for Genre:
 Genre has several unique values, hence we will have to look closely on methods to fill for it.
@@ -24,17 +26,16 @@ The results show that there is no relationship between genre and other numeric c
 -> 9 missing in between 4567 of Dark trap,
 -> 10 missing in between 1800+ of rap
 Since these data are missing in simialr clusters, we will fill on assumption that same pattern is continuing. We have identified two clusters, we fill accoridngly:
-cluster image
-
+![cluster image](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/clustergenre.png)
 
 ### Filling for Tempo:
 
 Tempo has no correlations we use anova to see if it has any relation with non numeric columns, our null hypthesis is that there is is no significant relationship between the two variables.
-img tempo
+![img tempo](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/checkingfortempo.png)
 
 Since our p values are greater than 0.05, our null hypothesis is true. We look at tempos distubtion and see if we can apply any other method on it:
-image distribution code
-image distribution
+![image distribution code](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/coodefortempodist.png)i
+mage distribution
 
 We can see to a great extnet tempo is normalised, and in a certian range, hence we fill it in using median
 
@@ -49,14 +50,18 @@ image of loudness filloing using impuation
 ### Filling for Danceability:
 Higher danceability relates to high loudness This code finds the missing danceability values, splits the data into two sets (one with missing danceability values and one with complete data), fits a linear regression model on the complete data, and predicts the missing danceability values from the loudness values using the trained model.
 
-image of dance fill
+![image of dance fill](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/Danceability.png)
 
 ### Analysis for Energy:
 Since Energy and Speechiness is highly corelated we check if it is valuable info for us.
-Image of analysis enrgy
+![Image of analysis enrgy](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/energy%20analysis.png)
 
 We will use further univariate analysis to extract insights on how "energy" is behaving:
-skewness and box plot image
+<div style="display:flex;">
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/energyboxplot.png" alt="Box Plot" width="400" height="300" />
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/energyskweness.png" alt="Skewness" width="400" height="300" />
+</div>
+
 
 We can see that the right lower quadrant is majory filled, that shows that for upper half of energy, there is lower half of speechiness which suggests that higher enery level songs mostly have lower speechiness. this shows negative corelation. We will be filling energy using speechiness as predicotr in our regression model for that we will first fill speechiness
 
@@ -64,7 +69,7 @@ We can see that the right lower quadrant is majory filled, that shows that for u
 To fill Speachiness we look at how it is corelated with a column that is majorly filled.
 
 Lets check for instrumentalness:
-img of corelation
+![img of corelation](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/coreofInstxSpeech.png)
 
 Our general understanding suggests that more instruments mean low speech, we check this with our data using scatter plot corelation matrix does not help us, so we use scatter plot:
 img scat plot.
