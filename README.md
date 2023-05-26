@@ -53,7 +53,9 @@ We can see to a great extnet tempo is normalised, and in a certian range, hence 
 ### Filling for Loudness:
 We have analysed the datset and have dropped the extreme outlier, and now we can see that most of the data is concentrated at one peak. Hence now our Loudness is normialised, and median will be used to calcuate the misisng values and since very low missing vlaues, it would not be a problem.
 
-![image of loudness missing.](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/loudness%20analysis.png)
+<div style="display:flex;">
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/loudness%20analysis.png" alt="image of loudness missing" width="600" height="300" />
+</div>
 
 #### Filling method:
 ![image of loudness filloing using impuation](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/fillingloudness.png)
