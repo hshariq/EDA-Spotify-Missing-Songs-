@@ -22,7 +22,9 @@ We can see that for each missing song name, there is a corresponding URI. Hence 
 ### Filling for Genre:
 Genre has several unique values, hence we will have to look closely on methods to fill for it.
 
-![img of count unique](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/genreuniruqe.png)
+<div style="display:flex;">
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/genreuniruqe.png" alt="images of missingsongs" width="500" height="500" />
+</div>
 
 We will be seeing if there is any significant association between 'genre' and the numeric columns: null hypothesis that there is no association between two categorical variables. Using chi-test we see:
 
