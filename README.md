@@ -6,9 +6,11 @@ Data Wrangling and EDA for Songs dataset of Spotify. The dataset included severa
 
 An overview of our datas missing value:
 
-![images of missing](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/missingmanomatrix.png)
-![sum](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/summissing.png)
-![pattern](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/dendogram.png)
+<div style="display:flex;">
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/missingmanomatrix.png" alt="images of missing" width="300" height="200" />
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/summissing.png" alt="sum" width="300" height="200" />
+  <img src="https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/dendogram.png" alt="pattern" width="300" height="200" />
+</div>
 
 ### Filling for Song Names:
 We can see that for each missing song name, there is a corresponding URI. Hence we will be using the uri, to update missing songs, it requires client id and secret which can not be shared. This is simply using the Spotify API to go and get the song name for the corresponding URI, and filling it inthe song_name column.
@@ -34,8 +36,7 @@ Tempo has no correlations we use anova to see if it has any relation with non nu
 ![img tempo](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/checkingfortempo.png)
 
 Since our p values are greater than 0.05, our null hypothesis is true. We look at tempos distubtion and see if we can apply any other method on it:
-![image distribution code](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/coodefortempodist.png)i
-mage distribution
+![image distribution code](https://github.com/hshariq/EDA-Spotify-Missing-Songs-/blob/main/image/coodefortempodist.png)
 
 We can see to a great extnet tempo is normalised, and in a certian range, hence we fill it in using median
 
